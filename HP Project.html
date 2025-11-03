@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter and the Chamber of Secrets</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #2b1055, #7597de);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    nav {
+      background-color: #181818;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .characters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: #1b1b1b;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background: #292929;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #181818;
+      color: #aaa;
+      margin-top: 30px;
+    }
+    button {
+      background-color: #ffd700;
+      color: black;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Harry Potter and the Chamber of Secrets</h1>
+  <p>by J.K. Rowling</p>
+</header>
+
+<nav>
+  <a href="#summary">Summary</a>
+  <a href="#characters">Characters</a>
+  <a href="#quiz">Quiz</a>
+</nav>
+
+<section id="summary">
+  <h2>📖 Story Summary</h2>
+  <p>
+    Harry Potter returns for his second year at Hogwarts, only to discover that strange things are happening —
+    students are being petrified and mysterious messages appear on the walls: “The Chamber of Secrets has been opened.
+    Enemies of the heir, beware.” With the help of Ron and Hermione, Harry uncovers the truth behind the Chamber, faces
+    the heir of Slytherin, and battles a memory of Tom Riddle — the young Lord Voldemort.
+  </p>
+</section>
+
+<section id="characters">
+  <h2>🧙‍♂️ Main Characters</h2>
+  <div class="characters">
+    <div class="card">
+      <h3>Harry Potter</h3>
+      <p>The Boy Who Lived — brave, loyal, and always ready to fight dark magic.</p>
+    </div>
+    <div class="card">
+      <h3>Hermione Granger</h3>
+      <p>The brightest witch of her age — logical, courageous, and brilliant at spells.</p>
+    </div>
+    <div class="card">
+      <h3>Ron Weasley</h3>
+      <p>Harry’s best friend, loyal and funny, who fears spiders more than anything.</p>
+    </div>
+    <div class="card">
+      <h3>Dobby</h3>
+      <p>The house-elf who tries to protect Harry, even if it means creating chaos.</p>
+    </div>
+    <div class="card">
+      <h3>Tom Riddle</h3>
+      <p>A memory of the young Lord Voldemort, hidden in a diary that opens the Chamber.</p>
+    </div>
+  </div>
+</section>
+
+<section id="quiz">
+  <h2>🧩 Mini Quiz</h2>
+  <p><b>Question:</b> Who was the real heir of Slytherin?</p>
+  <button onclick="checkAnswer()">Reveal Answer</button>
+  <p id="answer" style="display:none; color:#ffd700; font-weight:bold;">Tom Riddle (Voldemort)</p>
+</section>
+
+<script>
+  function checkAnswer() {
+    document.getElementById("answer").style.display = "block";
+  }
+</script>
+
+<footer>
+  <p>✨ Fan-made website for educational use ✨</p>
+</footer>
+
+</body>
+</html>
